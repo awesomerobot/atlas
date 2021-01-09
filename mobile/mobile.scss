@@ -63,9 +63,9 @@ body.category-header #main-outlet {
     display: block;
     color: $slate;
     width: 100%;
-    a {
-      display: none;
-    }
+    font-size: $font-down-2;
+    line-height: 1.6;
+    margin-bottom: 0.5em;
   }
   .right {
     margin-left: 0;

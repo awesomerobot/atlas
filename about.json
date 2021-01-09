@@ -15,5 +15,9 @@
       "success": "04B98E",
       "love": "f02079"
     }
-  }
+  },
+  "modifiers": {
+    "serialize_topic_excerpts": true
+  },
+  "components": ["https://github.com/awesomerobot/discourse-custom-sidebar"]
 }

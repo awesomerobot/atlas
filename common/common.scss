@@ -113,10 +113,6 @@ div.ac-wrap div.item a.remove,
   padding: 1px 2px;
 }
 
-img.avatar {
-  border-radius: 0;
-}
-
 .select-kit-header {
   border: 1px solid $smoke-darker !important;
 }
@@ -547,20 +543,17 @@ div.poll {
     }
     .topic-excerpt {
       // New excerpt placement, will be used on all posts
-      font-size: 0.853em; // 16px
-      line-height: 1.4;
+      font-size: 0.8em;
+      line-height: 1.6;
       color: $granite;
       display: block;
       width: 100%;
       font-weight: normal;
-      margin-top: 3px;
+      margin-top: 0.35em;
       order: 3;
       @media screen and (max-width: 850px) {
         width: 100%;
         margin-right: 0;
-      }
-      a {
-        display: none;
       }
     }
 
@@ -643,7 +636,7 @@ div.poll {
 
     .posts-map .number {
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 14px;
       margin-left: 0;
     }
 
@@ -654,6 +647,10 @@ div.poll {
     a {
       color: $primary;
     }
+  }
+
+  .a a:hover {
+    text-decoration: none;
   }
 
   a,
@@ -694,7 +691,7 @@ div.poll {
   }
 
   &.visited {
-    opacity: 0.7;
+    opacity: 0.8;
     a.title.raw-link.raw-topic-link,
     .topic-excerpt,
     .topic-featured-link,
@@ -713,9 +710,15 @@ div.poll {
     }
     img,
     .badge-wrapper {
-      opacity: 0.7;
+      opacity: 0.8;
     }
   }
+}
+
+.topic-list-item.visited span.badge-category,
+.latest-topic-list-item.visited span.badge-category,
+.category-topic-link.visited span.badge-category {
+  color: var(--primary-high);
 }
 
 tr.topic-list-item-separator {
@@ -1161,7 +1164,6 @@ h3.suggested-topics-message {
 // Category description
 
 #category-title-header {
-  padding-top: 60px;
   display: flex;
   text-align: center;
   width: 100%;
