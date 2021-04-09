@@ -28,7 +28,7 @@
                 toggleSecondaryMenu() {
                     
                     const controller = container.lookup('controller:navigation/category');
-                    category = controller.get("category");
+                    const category = controller.get("category");
                     $('#category-title-header').hide();
                     $("#main-outlet").css("padding-top","6em");
                     localStorage.setItem(category.name, "true");
