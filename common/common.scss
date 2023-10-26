@@ -13,14 +13,18 @@ $n-light: #e0f2f0;
 $n: #20b2aa;
 $n-dark: #00938c;
 
+:root {
+  --d-border-radius: 4px;
+}
+
 // Fonts
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap');
 
 // Global style
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #main-outlet {
@@ -88,13 +92,6 @@ aside.onebox {
   .extra-info & {
     color: $secondary;
   }
-}
-
-.btn,
-.nav-pills > li > a,
-.select-kit-header,
-nav.post-controls button {
-  border-radius: 4px;
 }
 
 .autocomplete ul li a.selected {
@@ -230,9 +227,7 @@ pre {
 
 .d-header {
   box-shadow: none;
-  .wrap {
-    max-width: $max-width;
-  }
+
   .d-header-icons {
     .icon {
       .d-icon {
@@ -409,7 +404,7 @@ div.poll {
     left: 10px;
     &:before {
       display: block;
-      content: "New";
+      content: 'New';
       padding: 4px 6px;
       font-size: 0.5em;
       text-transform: uppercase;
@@ -441,12 +436,10 @@ div.poll {
       display: block;
       position: relative;
       border-width: 2px;
-      margin-top: -13px;
       border-color: $slate;
       span {
         color: $slate;
         position: relative;
-        top: 6px;
       }
     }
   }
