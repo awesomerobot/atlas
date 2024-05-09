@@ -1,12 +1,9 @@
 <!-- Convert topic table to divs -->
-<script>
-  (function () {
-    var TopicListItemView = require("discourse/components/topic-list-item")
-      .default;
-    TopicListItemView.reopen({
-      tagName: "div",
-    });
-  })();
+<script type="text/discourse-plugin" version="0.8">
+  api.modifyClass("component:topic-list-item", {
+    tagName: "div",
+    pluginId: "atlas"
+  });
 </script>
 
 <!-- Add OP username after title -->
